@@ -1,85 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Yordan|Pet_Spa</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>YORDAN | Pet Spa</title>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Import style.css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fontello.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--Icono navegador-->
+    <link rel="shortcut icon" href="img/icon.png" />
+
 </head>
+
 <body>
-    <!-- Header -->
-    <div class="header">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Location</a></li>
-            <li><a href="">Contact Us</a></li>
-        </ul>
-    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <img src="./img/yordanicon3.png" class="logo" alt="Main Logo">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
 
-    <!-- Container 1-->
-    <div class="container-one">
-        <div>
-            <h1>MOBILE PET GROOMING</h1>
-            <p>We will leave your pet looking and feeling amazing in no time!</p>
-        </div>
-        <div>
-            <img alt="logo with dogs"  src="./img/logo.png" width="200px" height="200px">
-        </div>
-    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
 
-    <!-- Container 2 -->
-    <div class="container-two">
-        <img src="./img/bg1.png" height="320px" width="1280px">    
-    </div>    
+                <li class="nav-item">
+                    <a class="nav-link" href="#mapa">Ubicación</a>
+                </li>
 
-    <!-- Container 3-->
-    <div class="container-three">        
-            <h2>OUR SERVICES</h2>
-            <ul>
-                <li>
-                    <img src="./img/bath.jpg" width="160px" height="160px">
-                    <p>Bath</p>
+                <li class="nav-item">
+                    <a class="nav-link" href="acercade.html">Acerca de</a>
                 </li>
-                <li>
-                    <img src="./img/hair.jpg" width="160px" height="160px">
-                    <p>Haircut</p>
-                </li>
-                <li>
-                    <img src="./img/nail.jpg" width="160px" height="160px">
-                    <p>Nail trimming</p>
-                </li>
-                <li>
-                    <img src="./img/ear.jpg" width="160px" height="160px">
-                    <p>Ear cleaning</p>
-                </li>
-                <li>
-                    <img src="./img/more.jpg" width="160px" height="160px">
-                    <p>And more</p>
-                </li>                
             </ul>
+        </nav>
+        <div class="cover d-flex justify-content-center align-items-center flex-column">
+            <h1>
+                ASEO MÓVIL PARA MASCOTAS
+            </h1>
+            <P>¡Dejaremos a su mascota luciendo y sintiéndose increíble en muy poco tiempo!</P>
+            <button onclick="window.location.href='acercade.html'" class="btn btn-info">Conoce más</button>
         </div>
-    </div>
+    </header>
+    <section class="align-items-center" id="servicios">
+        <h2 class="servicios d-flex mt-4 align-items-center justify-content-center">Nuestros Servicios</h2>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
 
-    <!-- Container 4-->
-    <div class="container-four">
-        <ul>
-            <li>
-                <img src="./img/personnel.jpg" width="160px" height="160px">
-                <p>Our team</p>
-            </li>
-            <li>
-                <img src="./img/location.jpg" width="160px" height="160px">
-                <p>Location</p>
-            </li>
-            
-        </ul>
-    </div>
-    <!-- Footer -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-2">
+                    <div class="card">
+                        <div class="cover cover-peque" style="background-image: url(./img/bath.jpg);"> </div>
+                        <h6 class="card-title"><strong>Baño</strong></h6>
+                        <p class="card-text">Un refrescante baño para su perro con todas las comodidades que merece</p>
+                    </div>
+                </div>
 
-    <div class="footer">
-        <p>Yordan Pet Spa &copy; All Rights Reserved 2022</p>
-    </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-2">
+                    <div class="card">
+                        <div class="cover cover-peque" style="background-image: url(./img/hair.jpg);"></div>
+                        <h6 class="card-title"><strong>Corte de pelo</strong></h6>
+                        <p class="card-text">Estilizamos a tu mascota para que luzca genial</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-2">
+                    <div class="card">
+                        <div class="cover cover-peque" style="background-image: url(./img/nail.jpg);"></div>
+                        <h6 class="card-title"><strong>Recorte de uñas</strong></h6>
+                        <p class="card-text">Realizamos el corte de uñas con profesionalidad y sin generar dolor</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-2">
+                    <div class="card">
+                        <div class="cover cover-peque" style="background-image: url(./img/ear.jpg);"></div>
+                        <h6 class="card-title"><strong>Limpieza de oídos</strong></h6>
+                        <p class="card-text">Cuidamos de su salud y limpieza general</p>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 mt-2">
+                    <div class="card">
+                        <div class="cover cover-peque" style="background-image: url(./img/more.jpg);"></div>
+                        <h6 class="card-title"><strong>Glandula anal</strong></h6>
+                        <p class="card-text">Proveemos un servicio completo de higiene</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-3">
+                    <img class="img-fluid" src="./img/imag2.png" alt="yordan">
+                </div>
+                
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <div class="container" id="contenedor-formulario">
+                        <h2 class="text-center">¡No dudes en contactarnos!</h2>
+                        <p class="fs-6 text-center">Más que un negocio es un gesto de amor hacia tu Mascota</p>
+                        <form action="">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="nombre" placeholder="nombre" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="nombre-usuario" placeholder="user-name"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" id="telefono" placeholder="000 000 0000"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <button type="button" class="btn btn-info w-100 fs-5">Enviar Mensaje</button>
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3">
+                    <div id="titulo-formulario" class="text-center mb-4">
+                        <div><img src="img/imag1.png" alt="perrito" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="contenedorredes">
+            <input type="checkbox" id="btn-mas">
+            <div class="redes">
+                <a href="#" class="icon-facebook"></a>
+                <a href="#" class="icon-whatsapp"></a>
+                <a href="#" class="icon-instagram"></a>
+                <a href="#" class="icon-mail"></a>
+            </div>
+            <div class="btn-mas">
+                <label for="btn-mas" class="icon-plus"></label>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5 mb-5" id="mapa">
+            <h2>
+                Desde aquí nos movemos por toda Miami
+            </h2>
+            <p>
+                4770 SW 2nd St, Coral Gables, FL 33134, EE. UU.
+            </p>
+            <div class="responsive-iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.0243481106218!2d-80.27532888566019!3d25.769759314557813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b77c4780b3f5%3A0xc9483d6bc0aa5679!2s4770%20SW%202nd%20St%2C%20Coral%20Gables%2C%20FL%2033134%2C%20EE.%20UU.!5e0!3m2!1ses!2scu!4v1655683473611!5m2!1ses!2scu"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footery text-center">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2022 Copyright:
+            <a class="text-primary" href="index.html">Yordan Pet Spa Grooming</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
 </body>
+
 </html>
